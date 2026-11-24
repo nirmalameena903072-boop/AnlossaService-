@@ -21,7 +21,7 @@ const plans: Plan[] = [
     ],
     cta: "Start With Gold",
     href: waLink("Hi Anlossa Group, I want the GOLD package (₹1,299) — QR menu + WhatsApp ordering. ₹0 advance to start."),
-    theme: "gold", note: "ONE-TIME • NO MONTHLY FEE",
+    theme: "gold", note: "NO MONTHLY FEE • OWN IT FOREVER",
   },
   {
     name: "PLATINUM", price: "2,999", tagline: "The flagship scroll experience.", badge: "MOST POPULAR",
@@ -34,7 +34,7 @@ const plans: Plan[] = [
     ],
     cta: "Claim Platinum",
     href: waLink("Hi Anlossa Group, I want the PLATINUM package (₹2,999) — 3D site + studio visuals + reel. ₹0 advance to start."),
-    theme: "platinum", note: "ONE-TIME • MOST CHOSEN BY CAFES",
+    theme: "platinum", note: "MOST CHOSEN BY INDEPENDENT CAFES",
   },
   {
     name: "BLACK VOLIUD", price: "4,999", tagline: "The full operating system.", badge: "FLAGSHIP",
