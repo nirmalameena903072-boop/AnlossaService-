@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --font-syne: "Syne Variable";
+  --font-jakarta: "Plus Jakarta Sans Variable";
+  --font-grotesk: "Space Grotesk Variable";
+}
+html { scroll-behavior: smooth; }
+body { background: #050505; color: #fff; font-family: var(--font-jakarta), system-ui, sans-serif; -webkit-font-smoothing: antialiased; overflow-x: clip; }
+section[id] { scroll-margin-top: 88px; }
+::selection { background: #FACC15; color: #050505; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #050505; }
+::-webkit-scrollbar-thumb { background: #262626; border-radius: 99px; border: 2px solid #050505; }
+::-webkit-scrollbar-thumb:hover { background: #FACC15; }
+
+.tnum { font-variant-numeric: tabular-nums; font-feature-settings: "tnum"; }
+.preserve-3d { transform-style: preserve-3d; }
+.backface-hidden { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.perspective-1200 { perspective: 1200px; }
+.perspective-900 { perspective: 900px; }
+.gpu { transform: translateZ(0); will-change: transform; }
+
+/* Range slider — Apple style */
+input[type="range"].saffron-range { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 99px; background: linear-gradient(to right, #FACC15 var(--fill, 20%), #262626 var(--fill, 20%)); outline: none; cursor: pointer; }
+input[type="range"].saffron-range::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; border-radius: 50%; background: #fff; border: 6px solid #FACC15; box-shadow: 0 4px 20px rgba(250,204,21,.45), 0 2px 8px rgba(0,0,0,.5); cursor: grab; transition: transform .15s ease; }
+input[type="range"].saffron-range::-webkit-slider-thumb:hover { transform: scale(1.12); }
+input[type="range"].saffron-range::-webkit-slider-thumb:active { cursor: grabbing; transform: scale(1.05); }
+input[type="range"].saffron-range::-moz-range-thumb { width: 28px; height: 28px; border-radius: 50%; background: #fff; border: 6px solid #FACC15; box-shadow: 0 4px 20px rgba(250,204,21,.45); cursor: grab; }
+
+/* Border beam (VengeanceUI pattern, adapted) */
+.beam-wrap { position: relative; overflow: hidden; }
+.beam-wrap::before { content: ""; position: absolute; inset: -60%; background: conic-gradient(from 0deg, transparent 0deg, transparent 300deg, #FACC15 340deg, transparent 360deg); animation: beam-spin 4s linear infinite; pointer-events: none; }
+.beam-wrap::after { content: ""; position: absolute; inset: 1px; border-radius: inherit; background: inherit; pointer-events: none; }
+
+/* Carbon texture for Black Voliud */
+.carbon { background-color: #0A0A0A; background-image: radial-gradient(rgba(255,255,255,.07) 1px, transparent 1px), radial-gradient(rgba(255,255,255,.04) 1px, transparent 1px); background-size: 10px 10px, 14px 14px; background-position: 0 0, 5px 5px; }
+.gold-border { position: relative; background: #0A0A0A; }
+.gold-border::before { content: ""; position: absolute; inset: 0; border-radius: inherit; padding: 1.5px; background: linear-gradient(135deg, #FACC15, #8A6D00 35%, #FACC15 65%, #FFF3B0); -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); -webkit-mask-composite: xor; mask-composite: exclude; pointer-events: none; }
+
+/* Fine grid backdrop */
+.grid-lines { background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 72px 72px; }
+.grid-lines-light { background-image: linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,.05) 1px, transparent 1px); background-size: 72px 72px; }
+
+/* QR pattern */
+.qr-pattern { background-image: repeating-linear-gradient(0deg, #fff 0 6px, transparent 6px 12px), repeating-linear-gradient(90deg, #fff 0 6px, transparent 6px 12px); background-blend-mode: difference; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+  html { scroll-behavior: auto; }
+}
