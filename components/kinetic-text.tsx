@@ -9,8 +9,8 @@ export function KineticWords({
   return (
     <span className={className} aria-label={text}>
       {words.map((w, i) => (
-        <span key={i}>
-          <span className="inline-block overflow-hidden pb-[0.08em] -mb-[0.08em] align-bottom">
+        <span key={i} className="mr-[0.21em] inline-block align-bottom">
+          <span className="inline-block overflow-hidden pb-[0.08em] -mb-[0.08em]">
             <motion.span
               className="inline-block will-change-transform"
               initial={{ y: "110%", opacity: 0, filter: "blur(6px)" }}
@@ -21,7 +21,6 @@ export function KineticWords({
               {w}
             </motion.span>
           </span>
-          {i < words.length - 1 ? " " : ""}
         </span>
       ))}
     </span>
