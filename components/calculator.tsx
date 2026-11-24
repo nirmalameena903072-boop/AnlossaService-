@@ -106,7 +106,7 @@ export default function Calculator() {
                   className="absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-saffron/30 blur-[80px]" />
                 <div className="relative">
                   <p className="font-grotesk text-[10px] font-bold tracking-[0.26em] text-white/40">ANNUAL FEES SAVED</p>
-                  <p className="mt-4 font-display text-[15vw] font-extrabold leading-[0.9] tracking-display text-saffron tnum sm:text-5xl md:text-[44px] lg:text-[52px]">
+                  <p className="mt-4 font-display text-[11.5vw] font-extrabold leading-[0.9] tracking-display text-saffron tnum sm:text-5xl md:text-[42px] lg:text-[48px]">
                     {inr(display)}
                   </p>
                   <p className="mt-3 font-grotesk text-[10px] tracking-[0.18em] text-white/35">AT 22% PLATFORM COMMISSION</p>

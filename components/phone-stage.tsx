@@ -111,7 +111,7 @@ export default function PhoneStage() {
           {/* Copy */}
           <div className="relative text-center md:text-left">
             <motion.div style={{ y: headY, opacity: headOpacity }}>
-              <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-saffron/30 bg-saffron/10 px-3.5 py-1.5 font-grotesk text-[8.5px] font-bold tracking-[0.24em] text-saffron sm:mb-4 sm:text-[9.5px] sm:tracking-[0.28em]">
+              <p className="mb-3 inline-flex items-center gap-2 rounded-full border border-saffron/30 bg-saffron/10 px-3 py-1.5 font-grotesk text-[8px] font-bold tracking-[0.16em] text-saffron sm:mb-4 sm:px-3.5 sm:text-[9.5px] sm:tracking-[0.28em]">
                 <span className="h-1.5 w-1.5 rounded-full bg-saffron animate-pulseDot" /> ANLOSSA GROUP — HOSPITALITY &amp; CAFE DIGITAL SYSTEMS
               </p>
               <h1 className="font-display text-[10.5vw] font-extrabold leading-[0.92] tracking-display sm:text-[46px] md:text-[40px] lg:text-[48px] xl:text-[62px]">

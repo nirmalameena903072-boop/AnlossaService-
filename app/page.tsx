@@ -26,7 +26,7 @@ export default function Home() {
         target="_blank"
         rel="noreferrer"
         aria-label="Chat with Anlossa Group on WhatsApp"
-        className="fixed bottom-5 right-5 z-50 flex items-center gap-2.5 rounded-full border border-saffron/40 bg-obsidian/90 py-2.5 pl-3 pr-4 text-[11px] font-extrabold uppercase tracking-[0.1em] text-white shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-xl transition-transform hover:scale-105"
+        className="fixed bottom-5 right-5 z-50 hidden items-center gap-2.5 rounded-full sm:flex border border-saffron/40 bg-obsidian/90 py-2.5 pl-3 pr-4 text-[11px] font-extrabold uppercase tracking-[0.1em] text-white shadow-[0_12px_40px_rgba(0,0,0,0.6)] backdrop-blur-xl transition-transform hover:scale-105"
       >
         <span className="grid h-7 w-7 place-items-center rounded-full bg-saffron text-obsidian">
           <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden>
